@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffe5d9;
+  color: #5d2b2b;
+  text-align: center;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #b85c38;
+}
+
+.button-row {
+  margin: 20px;
+}
+
+.icon-button {
+  width: 80px;
+  height: auto;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.letter-panel,
+.gift-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff0eb;
+  border: 3px solid #e9a9a9;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  width: 80%;
+  max-width: 400px;
+}
+
+.panel-content h2 {
+  color: #b85c38;
+}
+
+.panel-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f7c1b5;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.panel-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.panel-content li {
+  margin: 10px 0;
+}
+
+.photo-frame {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.photo {
+  border: 5px solid #ffc7c7;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.photo.small {
+  width: 100px;
+  height: auto;
+}
+
+.photo.main {
+  width: 150px;
+  height: auto;
+  transform: scale(1.05);
+}
